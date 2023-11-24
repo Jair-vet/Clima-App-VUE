@@ -10,6 +10,8 @@
 
     const error = ref('')
 
+    const emit = defineEmits(['obtener-clima'])
+
     const paises = [
         { codigo: 'US', nombre: 'Estados Unidos' },
         { codigo: 'MX', nombre: 'México' },
@@ -28,6 +30,8 @@
             }, 3000)
             return
         }
+
+        emit('obtener-clima')
     }
 
 </script>
@@ -49,7 +53,7 @@
                 type="text"
                 id="ciudad"
                 placeholder="City"
-                className="bg-transparent focus:border-none border-2 w-full p-2 mt-2 rounded-xl focus:outline-none focus:ring focus:ring-sky-300"
+                className="bg-transparent text-white focus:border-none border-2 w-full p-2 mt-2 rounded-xl focus:outline-none focus:ring focus:ring-sky-300"
                 v-model="busqueda.ciudad"
             />
         </div>
