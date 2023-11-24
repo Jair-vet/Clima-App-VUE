@@ -4,11 +4,12 @@ import axios from 'axios'
 export default function useClima(){
 
     const clima = ref({})
+    const cargando = ref(false)
 
     const obtenerClima = async ({ciudad, pais}) => {
         // Importar apiKey
         const key = import.meta.env.VITE_API_KEY
-
+        cargando.value = true
 
         try{
             // Obtener la lat y lng
@@ -24,6 +25,8 @@ export default function useClima(){
 
         }catch (error){
             console.log(error);
+        } finally {
+            cargando.value = false
         }
 
     }
@@ -41,7 +44,8 @@ export default function useClima(){
         obtenerClima,
         clima,
         mostrarClima,
-        formatearTemp
+        formatearTemp,
+        cargando
     }
 }
 
