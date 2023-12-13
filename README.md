@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+# Clima App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### https://clima-app-vue-6941-enxjzisav-jair-vet.vercel.app/
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Clima-App-VUE](https://github.com/Jair-vet/Clima-App-VUE/assets/63264620/d1ad6aee-8d10-4a7f-8d83-21b3eeb9a7c5)
